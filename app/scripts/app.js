@@ -24,10 +24,13 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/graphs', {
+        templateUrl: 'views/graph.html',
+        controller: 'graphCtrl',
+        controllerAs: 'graph'
+      })
+	  .when('/contact', {
+        templateUrl: 'views/contact.html',
       })
       .otherwise({
         redirectTo: '/'
